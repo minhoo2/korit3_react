@@ -63,6 +63,7 @@ export default function Carlist() {
   else {
     return(
       <>
+        <AddCar />
         <DataGrid 
           rows={data}
           columns={columns}

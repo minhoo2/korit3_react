@@ -19,7 +19,7 @@ export default function AddCar() {
 
   const { mutate } = useMutation(addCar, {
     onSuccess: () => {
-      queryClient.invalidateQueries(['cars']);
+      queryClient.invalidateQueries(['cars']); // 이부분이 추가되고 업데이트했을 때 추가된 부분까지 보여줌.
     },
     onError: (err) => console.log(err),
   });
