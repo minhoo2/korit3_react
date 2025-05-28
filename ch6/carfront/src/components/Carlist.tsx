@@ -3,6 +3,7 @@ import { deleteCar, getCars } from "../api/carapi";
 import { DataGrid, GridCellParams, GridColDef } from "@mui/x-data-grid";
 import { Snackbar } from "@mui/material";
 import { useState } from "react";
+import AddCar from "./AddCar";
 
 export default function Carlist() {
   const queryClient = useQueryClient();
