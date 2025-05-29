@@ -67,11 +67,11 @@ export default function Carlist() {
 
 
   if (!isSuccess) {
-    return <span>Loading ... 💨</span>
+    return <span>Loading ... 💦</span>
   }
 
   else if (error) {
-    return <span>데이터를 가져오는 중 오류가 발생했습니다 ... 😪</span>
+    return <span>데이터를 가져오는 중 오류가 발생했습니다 ... </span>
   }
 
   else {
