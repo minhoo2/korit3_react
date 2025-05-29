@@ -1,7 +1,6 @@
 import { AppBar, Toolbar, Typography, Container, CssBaseline } from "@mui/material";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import Carlist from "./components/Carlist";
-import AddCar from "./components/AddCar";
 
 const queryClient = new QueryClient();
 
@@ -17,7 +16,6 @@ function App() {
         </Toolbar>
       </AppBar>
       <QueryClientProvider client={queryClient}>
-        <AddCar />
         <Carlist />
       </QueryClientProvider>
     </Container>
